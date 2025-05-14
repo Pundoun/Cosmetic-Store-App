@@ -27,7 +27,7 @@ import com.project2.banhangmypham.user.UserActivity;
 import com.project2.banhangmypham.viewmodel.account.AccountViewModel;
 
 public class UserFragment extends Fragment implements View.OnClickListener {
-    private static final String HOST = "http://10.131.141.214:5000/";
+    private static final String HOST = "http://172.16.3.8:5000/";
     Intent intent;
     private AccountViewModel accountViewModel ;
     private FragmentUserBinding binding ;

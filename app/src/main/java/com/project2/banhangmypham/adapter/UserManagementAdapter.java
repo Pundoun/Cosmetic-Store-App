@@ -25,7 +25,7 @@ import java.util.Base64;
 import java.util.List;
 
 public class UserManagementAdapter extends RecyclerView.Adapter<UserManagementAdapter.UserViewHolder> {
-    public static final String HOST = "http://10.131.141.214:5000/";
+    public static final String HOST = "http://172.16.3.8:5000/";
 
     private Context mContext ;
     private List<User> usersList = new ArrayList<>();

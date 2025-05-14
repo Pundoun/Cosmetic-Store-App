@@ -40,7 +40,7 @@ import okhttp3.RequestBody;
 
 
 public class AccountRepositoryImpl implements IAccountRepository {
-    public static final String HOST = "http://10.131.141.214";
+    public static final String HOST = "http://172.16.3.8";
     public static final String TAG = "AccountRepositoryImpl";
     public final ApiClientService apiClientService = new ApiClientService();
     private static final MediaType JSON = MediaType.get("application/json; charset=utf-8");

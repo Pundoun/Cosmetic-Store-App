@@ -34,7 +34,7 @@ import com.project2.banhangmypham.viewmodel.product.DetailProductViewModel;
 import java.util.Objects;
 
 public class DetailProductActivity extends AppCompatActivity {
-    private static final String HOST = "http://10.131.141.214:5000/";
+    private static final String HOST = "http://172.16.3.8:5000/";
     ActivityDetailProductBinding binding ;
     public static final String TAG = "DetailProductActivity";
     private Product productCurrent ;

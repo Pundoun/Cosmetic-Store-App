@@ -22,7 +22,7 @@ import java.util.Base64;
 import java.util.List;
 
 public class ProductAdminAdapter extends RecyclerView.Adapter<ProductAdminAdapter.ProductAdminViewHolder> {
-    private static final String HOST = "http://10.131.141.214:5000/";
+    private static final String HOST = "http://172.16.3.8:5000/";
     private Context mContext;
     private final List<Product> productsList = new ArrayList<>();
     private IProductEvenListener callback ;

@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    public static final String HOST = "http://10.131.141.214:5000/";
+    public static final String HOST = "http://172.16.3.8:5000/";
     private final List<Message> messageList = new ArrayList<>();
     private String currentUserId = "";
     public static final int MYSELF = 0 ;

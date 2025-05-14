@@ -24,7 +24,7 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
 public class UserRepositoryImpl implements IUserRepository{
-    public static final String HOST = "http://10.131.141.214:5000/";
+    public static final String HOST = "http://172.16.3.8:5000/";
     public static final String TAG = "UserRepositoryImpl";
     public final ApiClientService apiClientService = new ApiClientService();
     private static final MediaType JSON = MediaType.get("application/json; charset=utf-8");

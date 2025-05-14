@@ -3,25 +3,21 @@ package com.project2.banhangmypham;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.project2.banhangmypham.user.CartProductActivity;
 import com.project2.banhangmypham.user.DetailProductActivity;
 import com.project2.banhangmypham.user.SearchActivity;
 import com.project2.banhangmypham.adapter.CategoryUserAdapter;
 import com.project2.banhangmypham.adapter.ProductUserAdapter;
-import com.project2.banhangmypham.animation.ViewPagerAdapter;
 import com.project2.banhangmypham.databinding.FragmentHomeBinding;
 import com.project2.banhangmypham.model.Category;
 import com.project2.banhangmypham.model.Product;
@@ -34,7 +30,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 import java.util.Timer;
-import java.util.TimerTask;
 import java.util.stream.Collectors;
 
 public class HomeFragment extends Fragment implements View.OnClickListener,
