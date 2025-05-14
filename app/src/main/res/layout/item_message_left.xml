@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/iv_avatar"
+           android:layout_marginStart="10dp"
+           android:layout_gravity="center_vertical"
+           android:layout_width="20dp"
+           android:layout_height="20dp"/>
+       <TextView
+           android:fontFamily="@font/airbnb_cereal_app_light"
+           android:id="@+id/tv_message"
+           android:layout_width="wrap_content"
+           android:maxWidth="300dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="start"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/bg_receiver_message"
+           android:paddingHorizontal="20dp"
+           android:paddingVertical="10dp"
+           android:text="asdfdsfsafafsdsdsssddddsdsdfsdfsdfdfafdsafdf"
+           android:textColor="@color/colorTextBlack" />
+   </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="5dp"
+        android:text="Da xem"
+        android:textSize="12sp" />
+</LinearLayout>

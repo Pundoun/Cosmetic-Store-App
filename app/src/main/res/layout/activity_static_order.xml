@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.StaticOrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/baseline_back_24" />
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+
+            android:layout_toEndOf="@+id/iv_back"
+            android:fontFamily="@font/airbnb_cereal_app_medium"
+            android:text="Thống kê"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ll_header"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <RelativeLayout
+            android:id="@+id/ll_time_from"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_bill">
+
+            <TextView
+                android:id="@+id/tv_time_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_drop_down" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_time_to"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_bill">
+
+            <TextView
+                android:id="@+id/tv_time_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_drop_down" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_card_bill"
+            android:fontFamily="@font/airbnb_cereal_app_light"
+            android:padding="10dp"
+            android:text="Search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_time"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:text="Hiện tại không có dữ liệu"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_time"
+        android:layout_marginBottom="72dp"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_total_revenue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_total_revenue"
+            android:fontFamily="@font/airbnb_cereal_app_medium"
+            android:padding="5dp"
+            android:text="Tổng doanh thu:"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_total_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/airbnb_cereal_app_medium"
+            android:text="12345"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

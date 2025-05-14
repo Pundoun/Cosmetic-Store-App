@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.fragment.CompletingOrderAdminFragment">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_error"
+        android:padding="5dp"
+        android:text="Hiện tại không có dữ liệu"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextBlack"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="5dp"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/rcvOrderCompleting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

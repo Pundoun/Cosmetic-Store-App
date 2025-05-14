@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:fontFamily="@font/airbnb_cereal_app_medium"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="Thông tin ứng dụng"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/airbnb_cereal_app_light"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_margin="15sp"
+        android:text="Người sản xuất: " />
+
+    <TextView
+        android:fontFamily="@font/airbnb_cereal_app_light"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="15sp"
+        android:textAllCaps="true"
+        android:text="" />
+
+    <TextView
+        android:fontFamily="@font/airbnb_cereal_app_light"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_margin="15sp"
+        android:text="Chân thành cảm ơn: " />
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/airbnb_cereal_app_light"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15dp"
+        android:textAllCaps="true"
+        android:text="" />
+
+    <TextView
+        android:fontFamily="@font/airbnb_cereal_app_light"
+        android:justificationMode="inter_word"
+        android:id="@+id/thongtinungdung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginEnd="15dp"
+
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

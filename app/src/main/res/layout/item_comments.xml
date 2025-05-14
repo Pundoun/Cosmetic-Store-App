@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="5sp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/airbnb_cereal_app_medium"
+            android:id="@+id/tv_comment_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Nguyen Van A"
+            android:textColor="@color/colorTextBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_content_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:fontFamily="@font/airbnb_cereal_app_light"
+
+            android:padding="10dp"
+            android:text="sdjfdfdfdjfdf"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_control_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:fontFamily="@font/airbnb_cereal_app_medium"
+                android:clickable="true"
+                android:id="@+id/btn_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/btn_reject"
+                android:background="@drawable/bg_button_common"
+                android:paddingHorizontal="10dp"
+                android:text="Chap nhan"
+                android:textAllCaps="false" />
+
+            <Button
+                android:fontFamily="@font/airbnb_cereal_app_medium"
+                android:clickable="true"
+                android:id="@+id/btn_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_button_common"
+                android:paddingHorizontal="10dp"
+                android:text="Từ chối"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

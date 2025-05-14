@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/airbnb_cereal_app_light"
+                    android:text="Store location"
+                    android:textColor="#707B81"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toStartOf="@+id/tv_name_address"
+                    android:src="@drawable/baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/tv_name_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_address"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/airbnb_cereal_app_medium"
+                    android:text="Mondolibug, Sylhet"
+                    android:textColor="#1A2530"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/btn_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_shopping_cart_24" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/home_search"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:paddingStart="10dp"
+                android:text="Bạn muốn tìm gì hôm nay ?"
+                android:textAllCaps="false"
+                android:textColor="#707B81" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="5dp"
+                android:paddingVertical="5dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_discount_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnb_cereal_app_medium"
+                        android:text="Discount Product"
+                        android:textColor="#1A2530"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_discount_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_famous_product"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnb_cereal_app_medium"
+                        android:text="Popular Shoes"
+                        android:textColor="#1A2530"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_see_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingHorizontal="8dp"
+                        android:text="See all"
+                        android:textColor="#5B9EE1"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_popular_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_new_product"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnb_cereal_app_medium"
+                        android:text="New"
+                        android:textColor="#1A2530"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_see_new_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingHorizontal="8dp"
+                        android:text="See all"
+                        android:textColor="#5B9EE1"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_new_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="80dp"
+                    android:paddingHorizontal="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
