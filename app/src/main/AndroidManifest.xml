@@ -109,19 +109,13 @@
             android:exported="false" />
         <activity
             android:name=".common_screen.ForgetPasswordActivity"
-            android:exported="false" /> <!-- <activity android:name=".activity.ProductdetailActivity" /> -->
-        <!-- <activity -->
-        <!-- android:name=".user.SettingsActivity" -->
-        <!-- android:label="@string/title_activity_settings" /> -->
-        <!-- <activity android:name=".user.InfoActivity" /> -->
-        <activity android:name=".user.UserActivity" /> <!-- <activity android:name=".NotificationFragment.NotificationFragment" /> -->
-        <!-- <activity android:name=".user.DaBanActivity" /> -->
-        <!-- <activity android:name=".activity.CategoryActivity" /> -->
-        <!-- <activity android:name=".activity.NoiBatActivity" /> -->
+            android:exported="false" />
+
+        <activity android:name=".user.UserActivity" />
+
         <activity android:name=".common_screen.RegisterActivity" />
-        <activity android:name=".common_screen.LoginActivity" /> <!-- <activity android:name=".activity.YeuThichActivity" /> -->
-        <!-- <activity android:name=".user.SearchActivity" /> &lt;!&ndash; <activity android:name=".activity.GioHangActivity" /> &ndash;&gt; -->
-        <!-- <activity android:name=".user.AddProductActivity" /> -->
+        <activity android:name=".common_screen.LoginActivity" />
+
         <activity android:name=".MainActivity" />
         <activity
             android:name=".animation.SplashScreen"

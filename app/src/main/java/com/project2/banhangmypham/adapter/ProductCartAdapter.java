@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductCartAdapter extends RecyclerView.Adapter<ProductCartAdapter.CartViewHolder> {
-    private static final String HOST = "http://172.16.3.8:5000/";
+    private static final String HOST = "http://172.16.30.175:5000/";
 
     private Context mContext;
     private final List<CartProductRequest> productsList = new ArrayList<>();

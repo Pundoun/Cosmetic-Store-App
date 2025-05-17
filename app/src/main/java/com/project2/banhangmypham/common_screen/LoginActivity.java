@@ -49,8 +49,8 @@ public class LoginActivity extends AppCompatActivity {
 
         accountViewModel = new ViewModelProvider(this).get(AccountViewModel.class);
         accountViewModel.setAccountRepository(new AccountRepositoryImpl());
-//        binding.loginUser.setText("ducbh62cfvn@gmail.com");
-//        binding.loginUser.setText("ducbh62tlbb@gmail.com");
+//        binding.loginUser.setText("lnmtndnq2004@gmail.com");
+//        binding.loginUser.setText("ndnqndnq2004@gmail.com");
 //        binding.loginPass.setText("1234567");
 //        binding.loginPass.setText("123456789");
         accountViewModel.getLoggedLiveData().observe(this, loginState -> {

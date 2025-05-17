@@ -9,9 +9,9 @@ import com.project2.banhangmypham.R;
 
 public class InfoActivity extends AppCompatActivity {
     TextView thongtin;
-    String info = "    Sản phẩm tâm huyết của năm 2024. " +
-            "Vui lòng không sao lưu ăn cắp dưới mọi hình thức. " +
-            "Người dùng có thể xem thông tin chi tiết của các mặt hàng đang được bày bán, các mặt hàng nổi bật, nhiều người mua. Người dùng cũng có thể đăng mặt hàng lên để bán, cập nhật thuộc tính, mô tả của sản phẩm hoặc xóa sản phẩm trong kho của mình. Một cơ sở dữ liệu lưu trữ và cập nhật thông tin về những khách hàng. Thông báo tình trạng hàng đặt mua, giỏ hàng của khách. Diễn đàn trao đổi thông tin, các ý kiến khách hàng, các bài bình luận,.. Quản lý khách VIP, các dịch vụ khuyến mại dành cho khách hàng thân thiết ";
+    String info = " Hello " +
+            " Day la ung dung ban my pham " +
+            " Neu ban can gi hay lien he admin ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

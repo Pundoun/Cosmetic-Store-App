@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductUserAdapter extends RecyclerView.Adapter<ProductUserAdapter.ProductUserViewHolder> {
-    private static final String HOST = "http://172.16.3.8:5000/";
+    private static final String HOST = "http://172.16.30.175:5000/";
     private Context mContext;
     private final List<Product> productsList = new ArrayList<>();
     private IProductEvenListener callback;

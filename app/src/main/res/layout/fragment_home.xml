@@ -128,7 +128,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/airbnb_cereal_app_medium"
-                        android:text="Popular Shoes"
+                        android:text="Popular"
                         android:textColor="#1A2530"
                         android:textSize="16sp"
                         android:textStyle="bold" />
